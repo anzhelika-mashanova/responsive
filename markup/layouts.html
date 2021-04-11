@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <link rel="stylesheet" type="text/css" href="styles/style-chevron.css">
+  <title>Layouts</title>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+
+      <a href="index.html" class="logo">MYLIB</a>
+      <ul class="nav">
+        <li><a href="elements.html">Elements</a></li>
+        <li><a href="components.html" id="up-anch">Components</a></li>
+        <li><a href="layouts.html">Layouts</a></li>
+        <li><a href="position.html">Position</a></li>
+        <li><a href="links.html">Links</a></li>
+      </ul>
+    </header>
+    <main>
+      <div class="sidebar">
+        <ul class="sidebar-nav">
+          <li><a class="up" href="#up-anch"><img src="img/up.png"></a></li>
+          <li><a href="#chevron-anch">CHEVRON</a></li>
+          <li><a href="#html-example-anch">HTML EXAMPLE</a></li>
+          <li><a href="#css-example-anch">CSS EXAMPLE</a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <h2 class="title" id="chevron-anch">Chevron menu</h2>
+        <div class="box-large">
+          <img class="info-logo" src="img/info@2x.png">
+          <p>Possible to use on gradient background</p>
+          <p>Easy to use opacity for items background</p>
+          <p>Cross-browser</p>
+        </div>
+        <div class="chevron">
+          <nav class="navigate gradient">
+            <ul class="navigate-list">
+              <li class="navigate-item">
+                <a href="#">about</a>
+              </li>
+              <li class="navigate-item">
+                <a href="#">careers</a>
+              </li>
+              <li class="navigate-item">
+                <a href="#">faq</a>
+              </li>
+              <li class="navigate-item">
+                <a href="#">contact</a>
+              </li>
+            </ul>
+        </div>
+        <span class="frame" id="html-example-anch">
+          <div class="box-large-white">
+            <p>&lt;div class="chevron"></p>
+            <p>&nbsp;&lt;nav class="navigate gradient"></p>
+            <p>&nbsp;&nbsp;&lt;ul class="navigate-list"></p>
+            <p>&nbsp;&nbsp;&nbsp;&lt;li class="navigate-item"></p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#">about&lt;/a></p>
+            <p>&nbsp;&nbsp;&nbsp;&lt;/li></p>
+            <p>&nbsp;&nbsp;&nbsp;&lt;li class="navigate-item"></p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#">careers&lt;/a></p>
+            <p>&nbsp;&nbsp;&nbsp;&lt;/li></p>
+            <p>&nbsp;&nbsp;&nbsp;&lt;li class="navigate-item"></p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#">faq&lt;/a></p>
+            <p>&nbsp;&nbsp;&nbsp;&lt;/li></p>
+            <p>&nbsp;&nbsp;&nbsp;&lt;li class="navigate-item"></p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#">contact&lt;/a></p>
+            <p>&nbsp;&nbsp;&nbsp;&lt;/li></p>
+            <p>&nbsp;&nbsp;&nbsp;&lt;/ul></p>
+            <p>&lt;/div></p>
+          </div>
+        </span>
+        <span class="frame" id="css-example-anch">
+          <div class="box-large-white">
+            <p>.chevron {</p>
+            <p>&nbsp;font: 32px/37px Helvetica, Arial, sans-serif;</p>
+            <p>&nbsp;text-transform: uppercase;</p>
+            <p>&nbsp;color: #000000;</p>
+            <p>&nbsp;width: 1104px;</p>
+            <p>&nbsp;margin: 0 48px;</p>
+            <p>}</p>
+            <p>.navigate {</p>
+            <p>&nbsp;background: #000000;</p>
+            <p>&nbsp;border: 2px solid #000000;</p>
+            <p>}</p>
+            <p>.navigate-list {</p>
+            <p>&nbsp;text-align: right;</p>
+            <p>&nbsp;padding: 0 60px;</p>
+            <p>&nbsp;margin: 0;</p>
+            <p>}</p>
+            <p>.gradient {</p>
+            <p>&nbsp;background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 127.92%);</p>
+            <p>&nbsp;border: 2px solid transparent;</p>
+            <p>&nbsp;border-left: #000;</p>
+            <p>&nbsp;border-right: 0;</p>
+            <p>}</p>
+            <p>.navigate-item {</p>
+            <p>&nbsp;display: inline-block;</p>
+            <p>&nbsp;vertical-align: top;</p>
+            <p>&nbsp;position: relative;</p>
+            <p>&nbsp;margin: 0 21px;</p>
+            <p>}</p>
+            <p>.navigate-item a {</p>
+            <p>&nbsp;display: block;</p>
+            <p>&nbsp;background: #fff;</p>
+            <p>&nbsp;color: #000;</p>
+            <p>&nbsp;text-decoration: none;</p>
+            <p>&nbsp;padding: 30px 25px 29px;</p>
+            <p>}</p>
+            <p>.navigate-item a:before {</p>
+            <p>&nbsp;content: "";</p>
+            <p>&nbsp;display: block;</p>
+            <p>&nbsp;width: 0;</p>
+            <p>&nbsp;height: 0;</p>
+            <p>&nbsp;border-width: 48px 0 48px 25px;</p>
+            <p>&nbsp;border-style: solid;</p>
+            <p>&nbsp;border-color: #fff #fff #fff transparent;</p>
+            <p>&nbsp;position: absolute;</p>
+            <p>&nbsp;top: 0;</p>
+            <p>&nbsp;left: -25px;</p>
+            <p>}</p>
+            <p>.navigate-item a:after {</p>
+            <p>&nbsp;content: "";</p>
+            <p>&nbsp;display: block;</p>
+            <p>&nbsp;width: 0;</p>
+            <p>&nbsp;height: 0;</p>
+            <p>&nbsp;border-width: 48px 0 48px 25px;</p>
+            <p>&nbsp;border-style: solid;</p>
+            <p>&nbsp;border-color: transparent transparent transparent #fff;</p>
+            <p>&nbsp;position: absolute;</p>
+            <p>&nbsp;top: 0;</p>
+            <p>&nbsp;right: -25px;</p>
+            <p>}</p>
+            <p>a:hover {</p>
+            <p>&nbsp;background-color:#ccc;</p>
+            <p>}</p>
+            <p>a:hover:after{</p>
+            <p>&nbsp;border-color: transparent transparent transparent #ccc;</p>
+            <p>}</p>
+            <p>a:hover:before{</p>
+            <p>&nbsp;border-color: #ccc #ccc #ccc transparent;</p>
+            <p>}</p>
+            <p>.gradient a:hover {</p>
+            <p>&nbsp;background: #fff;</p>
+            <p>&nbsp;background-color: rgba(255,255,255,0.7);</p>
+            <p>}</p>
+            <p>.gradient a:hover:after {</p>
+            <p>&nbsp;border-color: transparent transparent transparent rgba(255,255,255,0.7);</p>
+            <p>}</p>
+            <p>.gradient a:hover:before {</p>
+            <p>&nbsp;border-color: rgba(255,255,255,0.7) rgba(255,255,255,0.7)</p>
+            <p>&nbsp;&nbsp;rgba(255,255,255,0.7) transparent;</p>
+            <p>}</p>
+          </div>
+        </span>
+      </div>
+    </main>
+  </div>
+
+</body>
+
+</html>
